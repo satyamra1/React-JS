@@ -1,0 +1,460 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Main Container */
+  .crush-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4ff, #d9e2ff);
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .crush-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .crush-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .crush-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Grid Layout */
+  .crush-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .crush-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Card Styles */
+  .crush-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .crush-card-header {
+    padding: 1.5rem;
+    color: white;
+  }
+  
+  .check-header {
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+  }
+  
+  .report-header {
+    background: linear-gradient(to right, #834d9b, #d04ed6);
+  }
+  
+  .crush-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .crush-card-description {
+    opacity: 0.9;
+    font-size: 0.95rem;
+  }
+  
+  .crush-card-content {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .crush-card-footer {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Form Styles */
+  .crush-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #8e54e9;
+    box-shadow: 0 0 0 3px rgba(142, 84, 233, 0.2);
+  }
+  
+  .form-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .form-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .check-button {
+    background-color: #4776e6;
+  }
+  
+  .check-button:hover {
+    background-color: #3a67d7;
+  }
+  
+  .report-button {
+    background-color: #834d9b;
+  }
+  
+  .report-button:hover {
+    background-color: #733d8a;
+  }
+  
+  /* Slider Styles */
+  .slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .scale-value {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .form-slider {
+    width: 100%;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #4776e6, #8e54e9, #d04ed6);
+    border-radius: 3px;
+    outline: none;
+    margin: 1rem 0;
+  }
+  
+  .form-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #8e54e9;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-slider::-webkit-slider-thumb:hover {
+    background: #8e54e9;
+  }
+  
+  .form-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #8e54e9;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-slider::-moz-range-thumb:hover {
+    background: #8e54e9;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  /* Dialog Styles */
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .dialog-content {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+  }
+  
+  .dialog-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dialog-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .dialog-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.3s;
+  }
+  
+  .dialog-close:hover {
+    color: #333;
+  }
+  
+  .dialog-body {
+    padding: 1.5rem;
+  }
+  
+  .dialog-description {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+  
+  .dialog-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dialog-button {
+    padding: 0.6rem 1.25rem;
+    background: #4776e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dialog-button:hover {
+    background: #3a67d7;
+  }
+  
+  /* Report Details */
+  .report-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .crowd-meter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .crowd-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .crowd-meter-container {
+    margin-top: 0.5rem;
+  }
+  
+  .crowd-meter-bg {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .crowd-meter-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+  }
+  
+  .crowd-meter-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 0.5rem;
+  }
+  
+  .crowd-message {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    padding: 2rem 0;
+    color: #777;
+  }
+  
+  /* Crowd Level Classes */
+  .level-high {
+    background-color: #ff4d4d;
+  }
+  
+  .crowd-message.level-high {
+    background-color: #fff0f0;
+    color: #d32f2f;
+  }
+  
+  .level-medium {
+    background-color: #ffb74d;
+  }
+  
+  .crowd-message.level-medium {
+    background-color: #fff8e1;
+    color: #f57c00;
+  }
+  
+  .level-low {
+    background-color: #66bb6a;
+  }
+  
+  .crowd-message.level-low {
+    background-color: #f1f8e9;
+    color: #388e3c;
+  }
+  
+  .level-unknown {
+    background-color: #bdbdbd;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .crush-title {
+      font-size: 2rem;
+    }
+  
+    .crush-card-header {
+      padding: 1.25rem;
+    }
+  
+    .crush-card-content {
+      padding: 1.25rem;
+    }
+  
+    .crush-card-footer {
+      padding: 0.75rem 1.25rem;
+    }
+  }
+  
+  
