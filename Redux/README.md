@@ -1,4 +1,4 @@
-![React Redux Banner](./assets/react-redux-banner.png)
+![React Redux Workflow](./assets/redux.jpg)
 
 # React Redux
 
