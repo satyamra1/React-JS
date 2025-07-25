@@ -1,4 +1,6 @@
-![React Redux Workflow](./assets/redux.jpg)
+![React Redux Workflow](src/assets/redux.jpg)
+
+
 
 # React Redux
 
